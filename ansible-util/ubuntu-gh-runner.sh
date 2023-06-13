@@ -23,3 +23,5 @@ tar xzf ./actions-runner-linux-x64-2.304.0.tar.gz
 ./config.sh --url https://github.com/tecdevgovtnz --token A6KCUSTOR3GRTA2A3W7V55LEQ7AZE --runasservice --runnergroup local-runner --unattended
 # Last step, run it!
 ./run.sh
+
+cd ~
