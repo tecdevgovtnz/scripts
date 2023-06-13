@@ -1,4 +1,5 @@
 wheel
+sshpass
 requests==2.31.0
 yamllint==1.25.0
 pywinrm==0.4.1
