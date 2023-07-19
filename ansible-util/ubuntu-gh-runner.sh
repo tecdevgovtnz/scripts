@@ -1,15 +1,15 @@
 #!/bin/bash
-# This file should be sourced
-mkdir /home/action-runner
-sudo chown action-runner /home/action-runner --recursive
-sudo chgrp action-runner /home/action-runner --recursive
-sudo useradd -d /home/action-runner action-runner
+# # This file should be sourced
+# mkdir /home/action-runner
+# sudo chown action-runner /home/action-runner --recursive
+# sudo chgrp action-runner /home/action-runner --recursive
+# sudo useradd -d /home/action-runner action-runner
 
-# Change directory to user home
-cd /home/action-runner
+# # Change directory to user home
+# cd /home/action-runner
 
 # Install Github runner agent
-
+mkdir actions-runner && cd actions-runner
 # Download the latest runner package
 curl -o actions-runner-linux-x64-2.306.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.306.0/actions-runner-linux-x64-2.306.0.tar.gz
 # Optional: Validate the hash
