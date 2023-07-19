@@ -9,8 +9,7 @@ sudo useradd -d /home/action-runner action-runner
 cd /home/action-runner
 
 # Install Github runner agent
-# # Create a folder
-# mkdir actions-runner && cd actions-runner
+
 # Download the latest runner package
 curl -o actions-runner-linux-x64-2.306.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.306.0/actions-runner-linux-x64-2.306.0.tar.gz
 # Optional: Validate the hash
@@ -19,11 +18,11 @@ echo "b0a090336f0d0a439dac7505475a1fb822f61bbb36420c7b3b3fe6b1bdc4dbaa  actions-
 tar xzf ./actions-runner-linux-x64-2.306.0.tar.gz
 
 # Create the runner and start the configuration experience
-./config.sh --url https://github.com/tecgovtnz --token ADUF4B2VXIW4GQ4I2NHHTXLEW2USS --runasservice --runnergroup local-runner --unattended
+./config.sh --url https://github.com/tecgovtnz --token ADUF4B6MN6WTJPZYXCMIIR3EW42ZM --runasservice --runnergroup local-runner --unattended
 #install as a service account
 ./svc.sh install action-runner
 # Last step, run it!
-sudo ./svc.sh start
-sudo ./svc.sh status
+./svc.sh start
+./svc.sh status
 
 cd ~
