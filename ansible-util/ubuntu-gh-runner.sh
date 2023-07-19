@@ -18,7 +18,7 @@ echo "b0a090336f0d0a439dac7505475a1fb822f61bbb36420c7b3b3fe6b1bdc4dbaa  actions-
 tar xzf ./actions-runner-linux-x64-2.306.0.tar.gz
 
 # Create the runner and start the configuration experience
-./config.sh --url https://github.com/tecgovtnz --token ADUF4B6MN6WTJPZYXCMIIR3EW42ZM --runasservice --runnergroup local-runner --unattended
+./config.sh --url https://github.com/tecgovtnz --token ADUF4B6MN6WTJPZYXCMIIR3EW42ZM --runasservice --name $(hostname) --work _work --runner-group Default --label Linux
 #install as a service account
 ./svc.sh install action-runner
 # Last step, run it!
